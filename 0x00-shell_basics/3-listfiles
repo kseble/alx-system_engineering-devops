@@ -1,5 +1,2 @@
 #!/bin/bash
-ls -l 0-current_working_directory
-ls -l 1-listit
-ls -l 2-bring_me_home
-ls -l 3-listfiles
+ls -l 0x00-shell_basics
