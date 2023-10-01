@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# stop using kill
+
+kill "$(ps -x | pgrep -f beyond)" 
