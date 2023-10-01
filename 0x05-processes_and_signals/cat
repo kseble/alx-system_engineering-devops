@@ -1,9 +1,0 @@
- in $(ps aux | awk '{print $5}'); do
-    ec
-
-
-
-
-
-
-
