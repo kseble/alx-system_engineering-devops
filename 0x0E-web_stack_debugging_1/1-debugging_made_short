@@ -1,2 +1,9 @@
 #!/usr/bin/env bash
+# Configure nginx
 
+# create a link
+ln -sf /etc/nginx/sites-avaible/default /etc/nginx/sites-enabled/default
+#restart 
+service nginx start
+# terminates the first nginx process ID
+kill "$(pgrep 'ngnix' | head -1)"
