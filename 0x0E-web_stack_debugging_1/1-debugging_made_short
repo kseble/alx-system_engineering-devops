@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# Configure nginx
-
-# create a link
 ln -sf /etc/nginx/sites-avaible/default /etc/nginx/sites-enabled/default
 service nginx start
 kill "$(pgrep 'ngnix' | head -1)"
+
