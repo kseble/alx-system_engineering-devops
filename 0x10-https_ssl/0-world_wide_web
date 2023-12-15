@@ -2,7 +2,7 @@
 # Usage: ./1-world_wide_web<domain><subdomain>
 # Display information about subdomain
 
-# fun to retrieve and display info about subdomain
+# fun to retrieve and display info about subdomai
 domain_information () {
     # perform DNS lookup for subdomain under the specified domain
     line=$(dig "$2","$1" | grep -Al 'ANSWER SECTION:' | tr '\t' '\n'| tail -2 |tr '\n' ' ')
