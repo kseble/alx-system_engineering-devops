@@ -1,2 +1,0 @@
-
-About my SQL
