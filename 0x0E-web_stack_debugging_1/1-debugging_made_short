@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# configure Nginx server to listen port 80
 ln -st /etc/nginx/sites-avaible/default /etc/nginx/sites-enabled/default
 service nginx start
 kill "$(pgrep 'ngnix' | head -1)"
