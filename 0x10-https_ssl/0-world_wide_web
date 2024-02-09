@@ -2,12 +2,12 @@
 # Usage: ./1-world_wide_web<domain><subdomain>
 # Display information about subdomain
 
-# fun to retrieve and display info about subdomai
+# fun to retrieve and display info about subdomain
 domain_information () {
     # perform DNS lookup for subdomain under the specified domain
-    line=$(dig "$2","$1" | grep -Al 'ANSWER SECTION:' | tr '\t' '\n'| tail -2 |tr '\n' ' ')
+    line=$(dig "$2"."$1" | grep -Al 'ANSWER SECTION:' | tr '\t' '\n'| tail -2 |tr '\n' ' ')
     # Extract relevant info and print
-    echo "$2 $line" | awk '{print *The subdomain " $1 " is " $2 " record and point to " $3 "}'
+    echo "$2 $line" | awk '{print "The subdomain " $1 " is " $2 " record and point to " $3}'
 }
 
 #check the no of argument passed to the script
