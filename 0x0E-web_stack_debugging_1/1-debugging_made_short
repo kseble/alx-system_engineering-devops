@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# configure Nginx server to listen port 80
-ln -st /etc/nginx/sites-avaible/default /etc/nginx/sites-enabled/default
-service nginx start
-kill "$(pgrep 'ngnix' | head -1)"
+# Installing new server to serve content
+./0-nginx_likes_port_80
+echo "hi" > /var/run/nginx.pid
+echo "hi" > /run/nginx.pid
