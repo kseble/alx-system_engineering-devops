@@ -2,7 +2,7 @@ Postmortem
 Incident Report also refered as Postmortem,is a framework for learning 
 from incidents and turning problems into progress. 
 
-Issue Summaary
+Issue Summary
 
 - short summary (5 sentences)
 - list the duration along with start and end times (include timezone)
